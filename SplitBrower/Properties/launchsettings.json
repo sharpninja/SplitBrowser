@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "GPS.SplitBrowser (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "GPS.SplitBrowser (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

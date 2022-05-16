@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>a9d0ed4e-484e-4ecc-9a29-920c1f8d5342</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>SplitBrowser.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Contracts\Services\IFileService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\Json.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\BrowserViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\FileService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)README.txt" />
+  </ItemGroup>
+</Project>
